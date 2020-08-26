@@ -1,60 +1,24 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardText, CardTitle } from 'reactstrap';
 import './Main.css';
+import Calculator from '../Components/Widgets/Calculator/Calculator';
+import ToDoList from '../Components/Widgets/ToDo-List/ToDo';
+import Clock from '../Components/Widgets/Clock/clock';
+import StopWatch from '../Components/Widgets/stop-watch/StopWatch';
+import { Switch, Route} from 'react-router-dom';
+import Menu from './MenuComponent'
 
 class Main extends Component{
     render(){
         return(
-            <div className="container">
-                <div className="row">
-                    <div className="card-wrap col-12 col-md-5">
-                        <Card className="bt-card">
-                        <CardBody>
-                            <CardTitle className="bt-card-title"><h2>Calculator</h2><hr/></CardTitle>
-                            <CardText>
-                                It is simple daily use Calculator, which you get at your finger tips.<br/>
-                                We made it by using <em>React.js</em>.<br/>
-                                Hope you use it.
-                            </CardText>
-                        </CardBody>
-                        </Card>
-                        <Card className="bt-card">
-                        <CardBody>
-                            <CardTitle className="bt-card-title"><h2>Todo-List</h2><hr/></CardTitle>
-                            <CardText>
-                                It is a simple app which keeps record of your daily works.<br/>
-                                You need not worry with the timings of your tasks, as it will notify you.<br/>
-                                Hope it will keep you in a track.
-                            </CardText>
-                        </CardBody>
-                        </Card>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="card-wrap col-12 col-md-5">
-                        <Card className="bt-card">
-                        <CardBody>
-                            <CardTitle className="bt-card-title"><h2>Clock</h2><hr/></CardTitle>
-                            <CardText>
-                                One of the most important thing is time.<br/>
-                                Don't Worry.<br/>
-                                We also provide a Clock app which will help a lot.<br/>
-                            </CardText>
-                        </CardBody>
-                        </Card>
-                        <Card className="bt-card">
-                        <CardBody>
-                            <CardTitle className="bt-card-title"><h2>Stop-Watch</h2><hr/></CardTitle>
-                            <CardText>
-                                It is a health related app,<br/>
-                                which will help you a lot.<br/>
-                                Happy health!!. 
-                            </CardText>
-                        </CardBody>
-                        </Card>
-                    </div>
-                </div>
-            </div>
+            <>
+                <Switch>
+                    <Route exact path="/" component={Menu} />
+                    <Route exact path="/calculator" component={Calculator} />
+                    <Route exact path="/todo" component={ToDoList} />
+                    <Route exact path="/stopwatch" component={StopWatch} />
+                    <Route exact path="/clock" component={Clock} />
+                </Switch>
+            </>
         );
     }
 }

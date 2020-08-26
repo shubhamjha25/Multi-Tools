@@ -1,0 +1,18 @@
+.card-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.bt-card {
+    width: 18rem;
+    margin: 2rem; 
+    background-color: burlywood;
+    border: 1.5px solid black;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.bt-card-title {
+    margin-bottom: 12px;
+}

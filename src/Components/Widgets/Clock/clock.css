@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    color: rgb(244, 250, 229);
+    color: rgb(18, 19, 17);
     font-family: monospace;
     font-size: 30px;
-    background-color: rgba(59, 152, 175, 0.918);
-    padding-top: 4rem;
-    padding-bottom: 30.8rem;
+    /* background-color: rgba(59, 152, 175, 0.918); */
+    /* padding-top: 4rem;
+    padding-bottom: 30.8rem; */
 }
 h2{
     display: flex;

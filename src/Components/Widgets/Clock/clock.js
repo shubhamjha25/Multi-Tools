@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './clock.css'
+// import './clock.css'
 
 const Clock = () => {
     let time = new Date().toLocaleTimeString();
@@ -11,9 +11,10 @@ const Clock = () => {
     setInterval(UpdateTime,1000)
     return(
         <>
-        <div className="con"></div>
-            <div className="container">
-                <h2>{time1}</h2>
+            {/* <div className="con"></div> */}
+            <div className="container" style={{display: 'flex', justifyContent: 'center', paddingTop: '10rem',
+             fontSize: '35px', backgroundColor: 'royalblue', paddingBottom: '33rem'}}>
+                <h2 style={{fontFamily: 'monospace'}}>{time1}</h2>
             </div>
         </>
     )

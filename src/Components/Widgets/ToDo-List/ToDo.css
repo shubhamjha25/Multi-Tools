@@ -1,0 +1,40 @@
+.App {
+    text-align: center;
+}
+  
+.wrap-todo {
+    background-color: #ffbdbd;
+    height: 100vh;
+}
+  
+.jumbotron{
+    text-align: center;
+    border-radius: 10px;
+    border: 3.5px solid black;
+}
+  
+.display-2 {
+    color: deepskyblue;
+    font-weight: 600 !important;
+}
+
+.lead {
+    color: black;
+    font-family: monospace;
+}
+  
+.form-control {
+    border: 2px solid #282828 !important;
+}
+
+.list-group-item {
+    border: 2px solid #282828 !important;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    .wrap-todo {
+        height: auto;
+    }
+}

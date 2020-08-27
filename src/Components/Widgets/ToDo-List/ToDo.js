@@ -27,7 +27,7 @@ class ToDoList extends Component {
                   <div className="input-group">
                     <input type="text" name="todotask" className="form-control" placeholder="Enter The Task"/>
                     <div className="input-group-append">
-                      <button type="submit" className="btn btn-outline-primary">Add Task</button>
+                      <button type="submit" className="btn btn-outline-primary"><strong>Add Task</strong></button>
                     </div>  
                   </div>
                 </form>

@@ -1,0 +1,104 @@
+/* body {
+    background:#2C3E50;
+  } */
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  /* .container{
+      background-color: black;
+      height: 100vh;
+  } */
+  .main-section {
+    background: transparent;
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+  }
+  
+  .clock-holder {
+    width: 100%;
+    /* background: black; */
+    margin: 30px auto;
+    position: relative;
+  }
+  .text{
+      text-align: center;
+      background-color: violet;
+      padding: 2rem;
+      border-radius: 50px;
+      box-shadow: 0 20px 20px 20px rgb(0, 128, 11);
+  }
+  u{
+      color: teal;
+  }
+  .stopwatch {
+    padding: 60px 0px;
+    text-align: center;
+  }
+  .stopwatch span{
+    background:#60f3f1;
+    color: rgb(12, 11, 11);
+    display: inline-block;
+    font-family: monospace;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 70px;
+    box-shadow: 5px 8px 16px 0 violet;
+  }
+  
+  .stopwatch .stopwatch-btn {
+    background: #fff;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: background 1s;
+    cursor: pointer;
+  }
+  .stopwatch .stopwatch-btn-red{
+    border: 2px solid #C85454;
+    color: #C85454;
+    box-shadow: 5px 8px 16px 0 brown;
+    border-radius: 25px;
+  }
+  .stopwatch .stopwatch-btn-yel{
+    border: 2px solid #FFC900;
+    color: #FFC900;
+    box-shadow: 5px 8px 16px 0 #FFC900;
+    border-radius: 25px;
+  }
+  
+  .stopwatch .stopwatch-btn-gre{
+    border: 2px solid #00ABA9;
+    color: #00ABA9;
+    box-shadow: 5px 8px 16px 0 tomato;
+    border-radius: 25px;
+  }
+  .stopwatch .stopwatch-btn-red:hover {
+    background: #C85454;
+    border: 2px solid #C85454;
+    color: #fff;
+  }
+  .stopwatch .stopwatch-btn-yel:hover {
+    background: #FFC900;
+    border: 2px solid #FFC900;
+    color: #fff;
+  }
+  .stopwatch .stopwatch-btn-gre:hover {
+    background: #00ABA9;
+    border: 2px solid #00ABA9;
+    color: #fff;
+  }
+  @media (max-width: 320px) {
+      .container{
+          height: auto;
+      }
+  }

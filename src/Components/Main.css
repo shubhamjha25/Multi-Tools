@@ -1,18 +1,39 @@
+.wrap {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
 .card-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1.2rem 0;
 }
 
 .bt-card {
     width: 18rem;
     margin: 2rem; 
     background-color: burlywood;
-    border: 1.5px solid black;
+    border: 2.5px solid red;
     padding: 25px;
     border-radius: 20px;
     text-align: justify;
 }
 
+.bt-card:hover {
+    box-shadow: 0 8px 16px 0 white;
+}
+
 .bt-card-title {
     margin-bottom: 12px;
+}
+
+@media (max-width: 576px) {
+    .card-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }

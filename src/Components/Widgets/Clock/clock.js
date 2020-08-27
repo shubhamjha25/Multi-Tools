@@ -12,8 +12,8 @@ const Clock = () => {
     return(
         <>
             {/* <div className="con"></div> */}
-            <div className="container" style={{display: 'flex', justifyContent: 'center', paddingTop: '10rem',
-             fontSize: '35px', backgroundColor: 'royalblue', paddingBottom: '33rem'}}>
+            <div style={{display: 'flex', justifyContent: 'center', paddingTop: '10rem',
+             fontSize: '35px', backgroundColor: 'royalblue', paddingBottom: '33rem', height: '100vh'}}>
                 <h2 style={{fontFamily: 'monospace'}}>{time1}</h2>
             </div>
         </>
